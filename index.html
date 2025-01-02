@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav-section">
+        <div class="nav-left">
+            <a href="index.html"> <img src="img/images/logo2.png" alt="" class="logo"> 
+            </a>
+           
+            <ul>
+                <li>
+                   <img src="img/images/notification.png" alt="">
+                </li>
+                <li>
+                  <img src="img/images/inbox.png" alt="">
+                </li>
+                <li>
+                  <img src="img/images/video.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <i><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></i>
+                <input type="text" name="text" id="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="img/images/profile-pic.png" alt="" class="">
+            </div>
+        </div>
+
+        <!----------------------------settings-menu------------------------------>
+<div class="settings-menu" >
+
+    <div id="dark-btn">
+        <span></span>
+    </div>
+    <div class="user-profile">
+        <div class="settings-menu-inner">
+       <div>
+        <img src="img/images/profile-pic.png" alt="">
+        </div>
+            <p>John Nicholson</p>
+            <a href="user.html">See your profile</a>
+    </div> 
+</div>
+      <hr>
+     <div class="user-profile">
+        <img src="img/images/feedback.png" alt="">
+     <div>
+            <p>Give feedback</p>
+            <a href="#">Help us to inprove the new design</a>
+     </div>
+        </div> 
+<hr>
+
+
+<div class="setting-links">
+    <img src="img/images/setting.png" alt="" class="settings-icon">
+    <a href="#">settings & Privacy  <img src="img/images/arrow.png" alt="" width="10px" style="margin: 0 10px;"></a>
+</div>
+<div class="setting-links">
+    <img src="img/images/help.png" alt="" class="settings-icon">
+    <a href="#">Help & Support<img src="img/images/arrow.png" alt="" width="10px" style="margin: 0 10px;"></a>
+</div>
+<div class="setting-links">
+    <img src="img/images/display.png" alt="" class="settings-icon">
+    <a href="#">Displays & Accessibility  <img src="img/images/arrow.png" alt="" width="10px" style="margin: 0 10px;"></a>
+</div>
+<div class="setting-links">
+    <img src="img/images/logout.png" alt="" class="settings-icon">
+    <a href="#">Logout  <img src="img/images/arrow.png" alt="" width="10px" style="margin: 0 10px;"></a>
+</div>
+</div>
+</div>
+
+    </nav>
+
+    <div class="container">
+<!----------------------------left-sidebar------------------------------->
+
+        <div class="left-sidebar">
+
+            <div class="imp-links">
+                <a href="#"><img src="img/images/news.png" alt="">Lastest News</a>
+                <a href="#"><img src="img/images/friends.png" alt="">Friends</a>
+                <a href="#"><img src="img/images/group.png" alt="">Group</a>
+                <a href="#"><img src="img/images/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="img/images/watch.png" alt="">watch</a>
+                <a href="#">See more</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your shortcut</p>
+                <a href="#"><img src="img/images/shortcut-1.png" alt="">web develoer</a>
+                <a href="#"><img src="img/images/shortcut-2.png" alt="">web designer</a>
+                <a href="#"><img src="img/images/shortcut-3.png" alt="">full-stack develpoment</a>
+                <a href="#"><img src="img/images/shortcut-4.png" alt="">website expert</a>
+            </div>
+        </div>
+
+        <!----------------------------main-sidebar------------------------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="img/images/member-1.png" alt="">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="img/images/member-2.png" alt="">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="img/images/member-3.png" alt="">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="img/images/member-4.png" alt="">
+                    <p>John Doe</p>
+                </div>
+            </div>
+<div class="write-post-container">
+    <div class="user-profile">
+        <img src="img/images/profile-pic.png" alt="">
+<div>
+            <p>John Nicholson</p>
+            <small>public<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"viewBox="0 0 16 16" style="margin-top:10px;">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></i></small>
+        </div>
+    </div>
+
+    <div class="post-input-container">
+            <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+        <div class="add-post-links">
+            <a href="#"><img src="img/images/live-video.png" alt="">Live Video</a>
+            <a href="#"><img src="img/images/photo.png" alt="">photo/Video</a>
+            <a href="#"><img src="img/images/feeling.png" alt="">Feeling/Activty</a>
+        </div>
+    </div>
+</div>
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="img/images/profile-pic.png" alt="">
+            <p class="user-text">John Nicholson</p><br>
+            <div>December 06 2024, 2:11 pm</div>
+        </div>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg></a>
+    </div>
+   
+
+<p class="post-text">Subscribe <span>@EasyTutorials</span> YouTube Channels to watch more video on website develpoment and UI designs. <a href="#">#EasyTutorais</a><a href="#">#YouTube Channel</a></p>
+<img src="img/images/feed-image-1.png" alt="" class="post-img">
+
+<div class="post-row">
+    <div class="activity-icon">
+        <div><img src="img/images/like-blue.png" alt="">120</div>
+        <div><img src="img/images/comments.png" alt="">45</div>
+        <div><img src="img/images/share.png" alt="">20</div>
+    </div>
+    <div class="post-profile-icon">
+        <img src="img/images/profile-pic.png" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"viewBox="0 0 16 16" style="margin-top:10px;">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+    </div>
+</div>
+</div>
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="img/images/profile-pic.png" alt="">
+            <p class="user-text">John Nicholson</p><br>
+            <div>December 06 2024, 2:11 pm</div>
+        </div>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg></a>
+    </div>
+   
+
+<p class="post-text">Like and share this video with friends, tag <span>@EasyTutorials</span> facebook page on your post. Ask your doubt in the comments  <a href="#">#EasyTutorais</a><a href="#">#YouTube Channel</a></p>
+<img src="img/images/feed-image-2.png" alt="" class="post-img">
+
+<div class="post-row">
+    <div class="activity-icon">
+        <div><img src="img/images/like.png" alt="">120</div>
+        <div><img src="img/images/comments.png" alt="">45</div>
+        <div><img src="img/images/share.png" alt="">20</div>
+    </div>
+    <div class="post-profile-icon">
+        <img src="img/images/profile-pic.png" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"viewBox="0 0 16 16" style="margin-top:10px;">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+    </div>
+</div>
+</div><div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="img/images/profile-pic.png" alt="">
+            <p class="user-text">John Nicholson</p><br>
+            <div>December 06 2024, 2:11 pm</div>
+        </div>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg></a>
+    </div>
+   
+
+<p class="post-text">Like and share this video with friends, tag <span>@EasyTutorials</span> facebook page on your post. Ask your doubt in the comments  <a href="#">#EasyTutorais</a><a href="#">#YouTube Channel</a></p>
+<img src="img/images/feed-image-3.png" alt="" class="post-img">
+
+<div class="post-row">
+    <div class="activity-icon">
+        <div><img src="img/images/like.png" alt="">120</div>
+        <div><img src="img/images/comments.png" alt="">45</div>
+        <div><img src="img/images/share.png" alt="">20</div>
+    </div>
+    <div class="post-profile-icon">
+        <img src="img/images/profile-pic.png" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"viewBox="0 0 16 16" style="margin-top:10px;">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+    </div>
+</div>
+</div>
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="img/images/profile-pic.png" alt="">
+            <p class="user-text">John Nicholson</p><br>
+            <div>December 06 2024, 2:11 pm</div>
+        </div>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg></a>
+    </div>
+   
+
+<p class="post-text">Like and share this video with friends, tag <span>@EasyTutorials</span> facebook page on your post. Ask your doubt in the comments  <a href="#">#EasyTutorais</a><a href="#">#YouTube Channel</a></p>
+<img src="img/images/feed-image-4.png" alt="" class="post-img">
+
+<div class="post-row">
+    <div class="activity-icon">
+        <div><img src="img/images/like.png" alt="">120</div>
+        <div><img src="img/images/comments.png" alt="">45</div>
+        <div><img src="img/images/share.png" alt="">20</div>
+    </div>
+    <div class="post-profile-icon">
+        <img src="img/images/profile-pic.png" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"viewBox="0 0 16 16" style="margin-top:10px;">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+    </div>
+</div>
+</div>
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="img/images/profile-pic.png" alt="">
+            <p class="user-text">John Nicholson</p><br>
+            <div>December 06 2024, 2:11 pm</div>
+        </div>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg></a>
+    </div>
+   
+
+<p class="post-text">Like and share this video with friends, tag <span>@EasyTutorials</span> facebook page on your post. Ask your doubt in the comments  <a href="#">#EasyTutorais</a><a href="#">#YouTube Channel</a></p>
+<img src="img/images/feed-image-5.png" alt="" class="post-img">
+
+<div class="post-row">
+    <div class="activity-icon">
+        <div><img src="img/images/like.png" alt="">120</div>
+        <div><img src="img/images/comments.png" alt="">45</div>
+        <div><img src="img/images/share.png" alt="">20</div>
+    </div>
+    <div class="post-profile-icon">
+        <img src="img/images/profile-pic.png" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"viewBox="0 0 16 16" style="margin-top:10px;">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+    </div>
+</div>
+</div>
+<button type="button" class="load-more-btn">Load More</button>
+
+
+</div>
+        <!----------------------------right-sidebar------------------------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+            
+                    <p><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></i>willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p>
+                    <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></i>willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisment</h4>
+                <a href="#">Close</a>
+            </div>
+<img src="img/images/advertisement.png" alt="" class="sidebar-ads">
+
+<div class="sidebar-title">
+    <h4>Convesation</h4>
+    <a href="#">Hide Chat</a>
+</div>
+
+<div class="online-list">
+    <div class="online">
+        <img src="img/images/member-1.png" alt="">
+        <p>Alison Mina</p>
+    </div>
+</div>
+<div class="online-list">
+    <div class="online">
+        <img src="img/images/member-2.png" alt="">
+        <p>Jackson  Aston</p>
+    </div>
+</div>
+<div class="online-list">
+    <div class="online">
+        <img src="img/images/member-3.png" alt="">
+        <p>Samona Rose </p>
+    </div>
+</div>
+        </div>
+    </div>
+
+
+<div class="footer">
+    <p>Copyright 2024 - Sustainer</p>
+</div>
+
+<script src="script.js">
+    
+</script>
+</body>
+</html>
